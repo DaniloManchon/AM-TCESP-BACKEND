@@ -9,10 +9,10 @@ Hospedado no Heroku: https://backend-tcesp.herokuapp.com
 
 ## Endpoints:
 
-### /muncipios
+### GET /muncipios
 Responsavel por retornar uma lista com todos os municipios sob juristição do TCESP
 
-### /receitas
+### GET /receitas
 Responsavel por retornar todas as receitas de um determinado municipio em um determinado periodo de tempo
 
 **Exemplo de request:**
@@ -23,14 +23,14 @@ Responsavel por retornar todas as receitas de um determinado municipio em um det
     "mes": "3"  
 }
 
-### /despesas
+### GET /despesas
 Responsavel por retornar todas as despesas de um determinado municipio em um determinado periodo de tempo
 
 **Exemplo de request:**
 
 {  
-"municipio": "adamantina",  
-"ano": "2018",  
-"mes": "3"  
+    "municipio": "adamantina",  
+    "ano": "2018",  
+    "mes": "3"  
 }
  

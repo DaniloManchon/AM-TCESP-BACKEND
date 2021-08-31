@@ -4,7 +4,8 @@
 
 Back-end da Avaliação Multidisciplinar baseada na challenge proposta pelo Tribunal de Contas do Estado de São Paulo.
 
-Projeto feito usando SpringBoot.
+Projeto feito usando SpringBoot.  
+Hospedado no Heroku: https://backend-tcesp.herokuapp.com
 
 ## Endpoints:
 

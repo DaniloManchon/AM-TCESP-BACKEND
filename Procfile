@@ -1,1 +1,1 @@
-web: java -jar target/backend-0.0.1-SNAPSHOT.war 8080
+web: java -jar target/backend-0.0.1-SNAPSHOT.war

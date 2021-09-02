@@ -5,6 +5,7 @@ import com.tcesp.backend.dto.response.MunicipiosDto;
 import com.tcesp.backend.service.MunicipioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "https://backend-tcesp.herokuapp.com/municipios")
 @RequestMapping("/municipios")
 public class MunicipioController {
 

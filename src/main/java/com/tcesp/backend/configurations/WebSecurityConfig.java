@@ -1,4 +1,4 @@
-package com.tcesp.backend;
+package com.tcesp.backend.configurations;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;

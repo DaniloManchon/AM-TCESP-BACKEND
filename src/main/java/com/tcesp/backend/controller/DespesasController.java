@@ -16,7 +16,7 @@ public class DespesasController {
     @Autowired
     DespesasService service;
 
-    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public List<ResponseDespesasDto> getDespesas(@RequestBody Request request) {
         String municipio = request.getMunicipio();
         String ano = request.getAno();

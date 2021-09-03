@@ -17,7 +17,7 @@ public class ReceitaController {
     @Autowired
     ReceitaService service;
 
-    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public List<ResponseReceitasDto> getReceita(@RequestBody Request request) {
         String municipio = request.getMunicipio();
         String ano = request.getAno();

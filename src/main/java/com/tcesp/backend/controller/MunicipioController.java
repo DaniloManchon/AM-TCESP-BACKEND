@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "https://backend-tcesp.herokuapp.com/municipios")
 @RequestMapping("/municipios")
 public class MunicipioController {
 

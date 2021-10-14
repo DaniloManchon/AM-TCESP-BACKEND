@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<h1>AM-TCESP-BACKEND</h1>
+<hr>
+<p>Back-end da Avaliação Multidisciplinar baseada na challenge proposta pelo Tribunal de Contas do Estado de São Paulo.</p>
+<p>Projeto feito usando SpringBoot.</p>
+<p>Hospedado no Heroku:</p>
+<p>Prod: https://backend-tcesp.herokuapp.com</p>
+<p>Dev: https://backend-tcesp-dev.herokuapp.com</p>
+</br>
+<h2>Endpoints:</h2>
+<h3>GET /muncipios</h3>
+<p>Responsavel por retornar uma lista com todos os municipios sob juristição do TCESP</p>
+</br>
+<h3>POST /receitas</h3>
+<p>Responsavel por retornar todas as receitas de um determinado municipio em um determinado periodo de tempo</p>
+</br>
+<h3>POST /despesas</h3>
+<p>Responsavel por retornar todas as despesas de um determinado municipio em um determinado periodo de tempo</p>
+</br>
+<h3>Exemplo de payload para receitas e despesas:</h3>
+<p>{</p>
+<p>"municipio": "adamantina",</p>
+<p>"ano": "2018",</p>
+<p>"mes": "3"</p>
+<p>}</p>
+</br>
+<h3>Exemplo de retorno para despesas:</h3>
+<p>{</p>
+<p>"orgao": "PREFEITURA MUNICIPAL DE ADAMANTINA",</p>
+<p>"mes": "Março",</p>
+<p>"evento": "Empenhado",</p>
+<p>"nr_empenho": "2229-2018",</p>
+<p>"id_fornecedor": "CNPJ - PESSOA JURÍDICA - 09321387000152",</p>
+<p>"nm_fornecedor": "JULIO FERNANDES BASILIO COM. DE PNEUS - ME",</p>
+<p>"dt_emissao_despesa": "19/03/2018",</p>
+<p>"vl_despesa": "405,00"</p>
+<p>},</p>
+</br>
+<h3>Exemplo de retorno para receitas:</h3>
+<p>{</p>
+<p>"orgao": "PREFEITURA MUNICIPAL DE ADAMANTINA",</p>
+<p>"mes": "Março",</p>
+<p>"ds_fonte_recurso": "01 - TESOURO",</p>
+<p>"ds_cd_aplicacao_fixo": "110 - GERAL",</p>
+<p>"ds_alinea": "17280100 - Participação na Receita dos Estados",</p>
+<p>"ds_subalinea": "17280131 - Cota-Parte do IPI - Municípios - Principal",</p>
+<p>"vl_arrecadacao": "-2.172,28",</p>
+<p>},</p>
+</body>
+</html>
